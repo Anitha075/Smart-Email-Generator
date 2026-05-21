@@ -1,4 +1,4 @@
-# 📧 Email AI Generator (Spring Boot + Gemini API)
+# 📧Smart Email Generator (Spring Boot + Gemini API)
 
 ## 🚀 Overview
 
