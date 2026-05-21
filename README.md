@@ -28,23 +28,9 @@ It takes user email content as input and returns an AI-generated response with a
 - Google Gemini API
 - Jackson (JSON parsing)
 
----
-email-writer-sb
-└── src/main/java/email_writer_sb/EmailWriterapp
-├── EmailWriterSbApplication.java
-├── EmailGeneratorController.java
-├── EmailGeneratorService.java
-├── EmailRequest.java
-└── WebClientConfig.java
-
----
-
-## ⚙️ Setup Instructions
-
-### 1️⃣ Clone the repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/your-username/email-ai-generator.git
 cd email-ai-generator
 
-## 📁 Project Structure
