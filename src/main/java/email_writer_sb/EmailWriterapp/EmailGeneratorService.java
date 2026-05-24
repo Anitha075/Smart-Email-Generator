@@ -11,13 +11,14 @@ import java.util.Map;
 @Service
 public class EmailGeneratorService {
     private final WebClient webClient;
-    @Value("${GEMINI_KEY}")
-    private String geminiApiKey;
-
-    @Value("${GEMINI_URL}")
+    @Value("${gemini.api.url}")
     private String geminiApiUrl;
 
+    @Value("${gemini.api.key}")
+    private String geminiApiKey;
+
     public EmailGeneratorService(WebClient.Builder webClientBuilder) {
+
         this.webClient = webClientBuilder.build();
     }
 
@@ -36,7 +37,7 @@ public class EmailGeneratorService {
         String response = webClient.post()
                 .uri(geminiApiUrl + geminiApiKey)
                 .header("Content-Type", "application/json")
-              //  .bodyValue(requestBody)
+                .bodyValue(requestBody)
                 .retrieve()
                 .bodyToMono(String.class)
                 .block();
@@ -70,13 +71,13 @@ public class EmailGeneratorService {
 
         private String buildPrompt(EmailRequest emailRequest){
             StringBuilder prompt = new StringBuilder();
-            prompt.append("Generate a professional reply for the following content and pls dont generate the subject reply");
+            prompt.append("Generate a professional reply for the following content.Please don't generate a subject line");
             if(emailRequest.getTone()!=null && !emailRequest.getTone().isEmpty())
             {
-                prompt.append("use a ").append(emailRequest.getTone()).append("tone");
+                prompt.append("Use a ").append(emailRequest.getTone()).append(" tone.");
 
             }
-            prompt.append("\nOriginal email:\n").append(emailRequest.getEmailContent());
+            prompt.append("\nOriginal email: \n").append(emailRequest.getEmailContent());
 
             return prompt.toString();
         }
