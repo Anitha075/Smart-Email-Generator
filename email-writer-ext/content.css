@@ -1,0 +1,25 @@
+.ai-reply-button {
+    background: #1a73e8 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 16px !important;
+    padding: 8px 14px !important;
+    margin-left: 10px !important;
+
+    height: 36px !important;
+
+    font-size: 13px !important;
+    font-weight: 600 !important;
+
+    cursor: pointer !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    transition: background 0.2s ease !important;
+}
+
+.ai-reply-button:hover {
+    background: #1558b0 !important;
+}
