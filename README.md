@@ -1,4 +1,4 @@
-# 📧 Email Writer Assistant
+# 📧 Smart-Email-Assistant
 ---
 
 # 📌 Project Overview
