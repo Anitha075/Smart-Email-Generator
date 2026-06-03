@@ -92,6 +92,7 @@ This project solves the problem by generating:
 * Chrome Browser
 * Postman
 * Git & GitHub
+* Postgresql
 
 ---
 
