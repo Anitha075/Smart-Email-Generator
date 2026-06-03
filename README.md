@@ -9,11 +9,11 @@
 
 ## Project Type
 
-Chrome Extension + Spring Boot Backend + AI Integration
+Chrome Extension + Spring Boot Backend + AI Integration(Gemini ai)
 
 ## Objective
 
-The Email Writer Assistant project is an AI-powered Chrome extension that helps users generate professional email replies directly inside Gmail using Artificial Intelligence.
+The Email Writer Assistant project is AI-powered Chrome extension that helps users generate professional email replies directly inside Gmail using Artificial Intelligence.
 
 The extension detects the Gmail compose window and inserts an **AI Reply** button into the toolbar. When clicked, the extension sends the email content to a backend API built using Spring Boot. The backend processes the request using AI and returns a professional reply which is automatically inserted into the compose box.
 
