@@ -1,5 +1,4 @@
-# 📧 Email Writer Assistant - Project Notes & README
-
+# 📧 Email Writer Assistant
 ---
 
 # 📌 Project Overview
