@@ -5,7 +5,7 @@
 
 ## Project Title
 
-**Email Writer Assistant**
+**Smart-Email-Assistant**
 
 ## Project Type
 
