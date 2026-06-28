@@ -675,17 +675,7 @@ Generated AI reply text
 * AI email summarization
 * Smart templates
 
----
 
-# 👨‍💻 Author
-
-Developed as an AI-powered productivity project using Chrome Extension and Spring Boot.
-
----
-
-# ⭐ Support
-
-If you found this project useful:
 
 * Star the repository
 * Share feedback
